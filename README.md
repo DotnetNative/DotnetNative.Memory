@@ -6,22 +6,13 @@ The library is mainly intended for use with native code, such as C++ or in conju
 Allocating memory
 ------------------------------
 ```C#
-void* ptr = MemEx.Alloc(6); // Allocates 6 bytes in memory
+void* ptr = Memory.Alloc(6); // Allocates 6 bytes in memory
 // ...
-MemEx.Free(ptr); // Free pointer
+Memory.Free(ptr); // Free pointer
 ```
 You can use other overloads of Alloc method for convenient work
 ```C#
-int* ptr = MemEx.Alloc<int>(6); // Allocates sizeof(int) * 6 bytes in memory
-```
-```C#
-int value = 7;
-int* ptr = MemEx.NewAlloc(value); // Allocates 4 bytes and write value to pointer
-// It should be noted that the allocation goes to the heap, not the stack, so this is not the same as &value
-```
-```C#
-int[] nums = { 1, 2, 3 };
-int* ptr = MemEx.AllocFrom(nums); // Allocates sizeof(int) * nums.Length bytes in memory and write array to pointer
+int* ptr = Memory.Alloc<int>(6); // Allocates sizeof(int) * 6 bytes in memory
 ```
 
 Allocating strings
@@ -34,15 +25,13 @@ ushort* unmanagedStringPtr = (ushort*)strCo;
 //...
 ```
 
-Used Libraries
-------------------------------
-**DotnetNativeBase** [![NuGet](https://img.shields.io/nuget/v/DotnetNativeBase.svg)](https://www.nuget.org/packages/DotnetNativeBase)
-
 Versions
 ------------------------------
 | Start ordinal | Framework | Description                  | Date         |
 | ---           | ---       | ---                          | ---          |
+| 1.0.0         | .net9.0   | -                            | Jun 26, 2025 |
+| 0.0.0         | -         | -                            | Jan 1, 1970  |
 | 2.0.1         | .net8.0   | Added MIT License            | Apr 28, 2024 |
 | 2.0.0         | .net8.0   | Switched to DotnetNativeBase | Apr 25, 2024 |
 | 1.1.0         | .net8.0   | Changed framework            | Nov 15, 2023 |
-| 1.0.0         | .net7.0   |                              | Sep 5, 2024  |
+| 1.0.0         | .net7.0   |                              | Sep 5, 2023  |
