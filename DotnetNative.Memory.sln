@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetNative.Memory", "DotnetNative.Memory\DotnetNative.Memory.csproj", "{228B1CE4-CC4C-42B3-947A-44761202163D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{228B1CE4-CC4C-42B3-947A-44761202163D}.Release|x64.ActiveCfg = Release|x64
+		{228B1CE4-CC4C-42B3-947A-44761202163D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {436059C8-3BAD-4878-A26A-64E5254023B2}
+	EndGlobalSection
+EndGlobal
