@@ -128,11 +128,11 @@ public unsafe static partial class Memory
 
     public static T* Alloc<T>(int count) => (T*)ZeroAllocate(sizeof(T) * count);
 
-    public static void* FastAlloc(int count) => Allocate(count);
+    public static void* NoZeroAlloc(int count) => Allocate(count);
 
-    public static T* FastAlloc<T>() => (T*)Allocate(sizeof(T));
+    public static T* NoZeroAlloc<T>() => (T*)Allocate(sizeof(T));
 
-    public static T* FastAlloc<T>(int count) => (T*)Allocate(sizeof(T) * count);
+    public static T* NoZeroAlloc<T>(int count) => (T*)Allocate(sizeof(T) * count);
 
     public static void Free(void* pointer) => Free((IntPtr)pointer);
 
